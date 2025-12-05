@@ -45,7 +45,7 @@ SCREAM_CIPHER <- function(x, decode = FALSE) {
 
   if (decode) {
     # Create reverse mapping
-    decode_map <- setNames(LETTERS, scream_alphabet)
+    decode_map <- stats::setNames(LETTERS, scream_alphabet)
     vapply(x, function(s) {
       chars <- strsplit(s, "")[[1]]
       decoded <- vapply(chars, function(ch) {
