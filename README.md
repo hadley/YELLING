@@ -1,5 +1,5 @@
 
-# YELLING
+# YELLING <a href="https://hadley.github.io/YELLING/"><img src="man/figures/logo.png" align="right" height="120" alt="YELLING website" /></a>
 
 A comprehensive toolkit for expressing yourself textually.
 
