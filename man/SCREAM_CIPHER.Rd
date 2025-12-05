@@ -15,11 +15,11 @@ SCREAM_CIPHER(x, decode = FALSE)
 A character vector with encoded/decoded text.
 }
 \description{
-Encode text using the scream cipher where each letter becomes
-"A" followed by the letter's position in the alphabet as "A"s.
-For example, A=AA, B=AAA, C=AAAA, etc.
+Encode text using the scream cipher from XKCD 3054, where each letter
+is represented by the letter A with a different diacritical mark.
+The result looks like screaming (AAAAAAAA) but encodes a message.
 }
 \examples{
 SCREAM_CIPHER("hi")
-SCREAM_CIPHER("AAAAAAAAAAA AAAAAAAAAAAA", decode = TRUE)
+SCREAM_CIPHER("secret message")
 }
