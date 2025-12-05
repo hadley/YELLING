@@ -1,0 +1,88 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# YELLING
+A comprehensive toolkit for expressing yourself textually.
+
+## Installation
+
+```{r}
+#| eval: false
+# install.packages("pak")
+pak::pak("hadley/YELLING")
+```
+
+## Usage
+
+```{r}
+library(YELLING)
+```
+
+### Volume Control
+
+```{r}
+YELL("hello")
+
+WHISPER("PLEASE BE QUIET")
+
+SCREAM("fire")
+
+YELL_LOUDER("HELLO!")
+```
+
+### Emotional Expression
+
+```{r}
+SARCASTICALLY("oh wow thats great")
+
+PASSIVE_AGGRESSIVELY("fine whatever sure")
+
+DRAMATICALLY("I cant believe it")
+```
+
+### Internet Culture
+
+```{r}
+CLAP("say it louder")
+
+MOCK("I'm not mad")
+```
+
+### Sound Effects
+
+```{r}
+ECHO("hello")
+
+ELONGATE("no")
+
+STUTTER("what do you mean")
+```
+
+### Utility
+
+```{r}
+IS_YELLING("HELLO")
+
+SHOUT_INTO_VOID("HELLO?")
+
+INDOOR_VOICE("HELLO")
+```
+
+### Scream Cipher
+
+Based on [XKCD 3054](https://xkcd.com/3054/), encodes text using A with
+different diacritical marks for each letter.
+
+```{r}
+SCREAM_CIPHER("hello")
+
+SCREAM_CIPHER("ÅÂǍǍḀ", decode = TRUE)
+```
